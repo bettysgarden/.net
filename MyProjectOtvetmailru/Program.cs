@@ -1,39 +1,47 @@
-using MyProjectOtvetmailru.AppConfigure.ApplicationExtensions;
-using MyProjectOtvetmailru.AppConfigure.ServicesExtensions;
+using MyProjectOtvetmailru.AppConfiguration.ApplicationExtensions;
+using MyProjectOtvetmailru.AppConfiguration.ServicesExtensions;
 using Serilog;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace MyProjectOtvetmailru;
 
-builder.AddSerilogConfiguration(); //Add serilog
-builder.Services.AddVersioningConfiguration(); //add api versioning
-builder.Services.AddSwaggerConfiguration(); //add swagger configuration
-
-var app = builder.Build();
-
-app.UseSerilogConfiguration(); //use serilog
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+internal class Program
 {
-    app.UseSwaggerConfiguration(); //use swagger
-}
+    private static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
+        builder.AddSerilogConfiguration(); //Add serilog
+        builder.Services.AddVersioningConfiguration(); //add api versioning
+        builder.Services.AddSwaggerConfiguration(); //add swagger configuration
 
-try
-{
-    Log.Information("Application starting...");
+        var app = builder.Build();
 
-    app.Run();
-}
-catch (Exception ex)
-{
-    Log.Error("Application finished with error {error}", ex);
-}
-finally
-{
-    Log.Information("Application stopped");
-    Log.CloseAndFlush();
+        app.UseSerilogConfiguration(); //use serilog
+
+        // Configure the HTTP request pipeline.
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseSwaggerConfiguration(); //use swagger
+        }
+
+        app.UseHttpsRedirection();
+        app.UseAuthorization();
+        app.MapControllers();
+
+        try
+        {
+            Log.Information("Application starting...");
+
+            app.Run();
+        }
+        catch (Exception ex)
+        {
+            Log.Error("Application finished with error {error}", ex);
+        }
+        finally
+        {
+            Log.Information("Application stopped");
+            Log.CloseAndFlush();
+        }
+    }
 }
