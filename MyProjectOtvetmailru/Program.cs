@@ -13,6 +13,7 @@ internal class Program
         builder.AddSerilogConfiguration(); //Add serilog
         builder.Services.AddVersioningConfiguration(); //add api versioning
         builder.Services.AddSwaggerConfiguration(); //add swagger configuration
+        builder.Services.AddControllers();
 
         var app = builder.Build();
 

@@ -39,3 +39,4 @@
 /Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/bin/Debug/net6.0/Serilog.Sinks.Console.dll
 /Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/bin/Debug/net6.0/Serilog.Sinks.Debug.dll
 /Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/bin/Debug/net6.0/Serilog.Sinks.File.dll
+/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/bin/Debug/net6.0/api.xml
