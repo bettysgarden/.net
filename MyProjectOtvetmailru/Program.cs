@@ -25,9 +25,11 @@ internal class Program
             app.UseSwaggerConfiguration(); //use swagger
         }
 
+        app.UseRouting();
         app.UseHttpsRedirection();
         app.UseAuthorization();
         app.MapControllers();
+        app.UseSerilogRequestLogging();
 
         try
         {
