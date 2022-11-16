@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.OpenApi.Models;
 
-namespace MyProjectOtvetmailru.AppConfiguration.ServicesExtensions
+namespace Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions
 {
     public static partial class ServicesExtensions
     {

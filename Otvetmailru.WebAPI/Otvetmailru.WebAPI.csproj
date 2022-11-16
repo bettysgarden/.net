@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
     <PackageReference Include="Serilog.Sinks.Seq" Version="5.2.3-dev-00257" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
@@ -20,5 +21,9 @@
     <PackageReference Include="Serilog.Expressions" Version="3.4.1" />
     <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Otvetmailru.Entity\Otvetmailru.Entity.csproj" />
   </ItemGroup>
 </Project>

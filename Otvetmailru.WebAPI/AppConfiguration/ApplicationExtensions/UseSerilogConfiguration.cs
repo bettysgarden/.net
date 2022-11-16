@@ -1,6 +1,6 @@
 using Serilog;
 
-namespace MyProjectOtvetmailru.AppConfiguration.ApplicationExtensions
+namespace Otvetmailru.WebAPI.AppConfiguration.ApplicationExtensions
 {
     public static partial class AppExtensions
     {

@@ -1,4 +1,4 @@
-namespace MyProjectOtvetmailru;
+namespace Otvetmailru.WebAPI;
 
 public class WeatherForecast
 {

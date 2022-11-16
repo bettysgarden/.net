@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyProjectOtvetmailru.AppConfiguration.ServicesExtensions
+namespace Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions
 {
     /// <summary>
     /// Services extensions

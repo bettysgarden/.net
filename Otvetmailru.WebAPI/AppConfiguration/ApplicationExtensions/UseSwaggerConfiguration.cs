@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
-namespace MyProjectOtvetmailru.AppConfiguration.ApplicationExtensions
+namespace Otvetmailru.WebAPI.AppConfiguration.ApplicationExtensions
 {
     /// <summary>
     /// Application builder extensions

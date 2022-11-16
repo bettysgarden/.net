@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyProjectOtvetmailru.Controllers;
+namespace Otvetmailru.WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
