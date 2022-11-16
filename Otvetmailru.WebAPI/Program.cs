@@ -39,7 +39,7 @@ internal class Program
         }
         catch (Exception ex)
         {
-            Log.Error("Application finished with error {error}", ex);
+            Log.Error("Application finished with error {Error}", ex);
         }
         finally
         {

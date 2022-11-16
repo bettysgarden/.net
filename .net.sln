@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otvetmailru.WebAPI", "Otvetmailru.WebAPI\Otvetmailru.WebAPI.csproj", "{103D0368-A290-4233-B95B-D4C759AEDAA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otvetmailru.Entity", "Otvetmailru.Entity\Otvetmailru.Entity.csproj", "{D9CCBFE4-693F-41B9-A393-6F71DFFDEEEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otvetmailru.Repository", "Otvetmailru.Repository\Otvetmailru.Repository.csproj", "{6B1AAE7D-F7F7-4B8D-A785-ADB41520AE2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +22,14 @@ Global
 		{103D0368-A290-4233-B95B-D4C759AEDAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{103D0368-A290-4233-B95B-D4C759AEDAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{103D0368-A290-4233-B95B-D4C759AEDAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9CCBFE4-693F-41B9-A393-6F71DFFDEEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9CCBFE4-693F-41B9-A393-6F71DFFDEEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9CCBFE4-693F-41B9-A393-6F71DFFDEEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9CCBFE4-693F-41B9-A393-6F71DFFDEEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1AAE7D-F7F7-4B8D-A785-ADB41520AE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1AAE7D-F7F7-4B8D-A785-ADB41520AE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1AAE7D-F7F7-4B8D-A785-ADB41520AE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1AAE7D-F7F7-4B8D-A785-ADB41520AE2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
 
