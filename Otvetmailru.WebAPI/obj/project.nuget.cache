@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5mjKI2BnDK7L1MeR73XmLo33N8CIhj1ODtSmURrnP+rGc8bnOChjG6/lrX3jIdgmvJlhb5iprT6NS5o4IyJ8jQ==",
+  "dgSpecHash": "mp/7jJ3sE9N6zI0IgydtRhnTYO31vlmb7rz28umbfXz3V4hXlY71tSg2MXymNjYG1uaAKiWAcGR5mx7OKCK22w==",
   "success": true,
-  "projectFilePath": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/MyProjectOtvetmailru.csproj",
+  "projectFilePath": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
   "expectedPackageFiles": [
     "/Users/Elizaveta1/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/Elizaveta1/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

@@ -4507,11 +4507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/MyProjectOtvetmailru.csproj",
-      "projectName": "MyProjectOtvetmailru",
-      "projectPath": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/MyProjectOtvetmailru.csproj",
+      "projectUniqueName": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
+      "projectName": "Otvetmailru.WebAPI",
+      "projectPath": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
       "packagesPath": "/Users/Elizaveta1/.nuget/packages/",
-      "outputPath": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/obj/",
+      "outputPath": "/Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/Otvetmailru.WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Elizaveta1/.nuget/NuGet/NuGet.Config"
