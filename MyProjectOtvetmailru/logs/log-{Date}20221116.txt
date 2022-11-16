@@ -1,0 +1,11 @@
+[10:36:02:326 INF ()] Application starting...
+[10:36:02:594 INF ()] Now listening on: https://localhost:7288
+[10:36:02:599 INF ()] Now listening on: http://localhost:5198
+[10:36:02:606 INF ()] Application started. Press Ctrl+C to shut down.
+[10:36:02:607 INF ()] Hosting environment: Development
+[10:36:02:607 INF ()] Content root path: /Users/Elizaveta1/Desktop/dotnet/MyProjectOtvetmailru/.net/MyProjectOtvetmailru/
+[10:37:11:746 INF ()] Application is shutting down...
+1)] HTTP GET /swagger/index.html responded 200 in 211.0127 ms
+[10:36:03:393 INF (17ae2feb-88d0-46fe-a0b1-9d6704f2c950)] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 19.3498 ms
+[10:36:03:433 INF (d97e1c1c-17b1-4888-ac9c-99e7338d4154)] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 54.7007 ms
+[10:36:03:884 INF (9f06d584-f02c-41a9-8a63-a9a29db9b0b9)] HTTP GET /swagger/v1/swagger.json responded 200 in 187.5221 ms
