@@ -1,6 +1,6 @@
 namespace Otvetmailru.Entities.Models;
 
-public class Level
+public enum Level
 {
-    
+    // погуглить
 }

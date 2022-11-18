@@ -1,6 +1,6 @@
 namespace Otvetmailru.Entities.Models;
 
-public class Question
+public class Question : BaseEntity
 {
     
 }

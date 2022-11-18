@@ -1,6 +1,6 @@
 namespace Otvetmailru.Entities.Models;
 
-public class Likes
+public class Likes : BaseEntity
 {
     
 }

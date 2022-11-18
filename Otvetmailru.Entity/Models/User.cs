@@ -2,20 +2,20 @@ namespace Otvetmailru.Entities.Models;
 
 public class User : BaseEntity
 {
-        
-    public Guid Id { get; set; }
-    public DateTime CreationTime { get; set; }
-    public DateTime ModificationTime { get; set; }
-
-    public bool IsNew()
-    {
-        return Id == Guid.Empty;
-    }
-
-    public void Init()
-    {
-        Id = Guid.NewGuid();
-        CreationTime = DateTime.UtcNow;
-        ModificationTime = DateTime.UtcNow;
-    }
+    public string PasswordHash { get; set; }
+    public string Login { get; set; }
+    public string Email { get; set; }
+    
+    public string LastName { get; set; }
+    public string FirstName { get; set; } // фио 
+    public string SecondName { get; set; }
+    public string Nickname { get; set; }
+    public DateTime Birthday { get; set; }
+    
+    public bool Vip { get; set; }
+    public Level Level { get; set; }
+    public int CountAnswers { get; set; }
+    public int CountQuestions { get; set; }
+    public int CountBest { get; set; }
+    public int Tags { get; set; }
 }

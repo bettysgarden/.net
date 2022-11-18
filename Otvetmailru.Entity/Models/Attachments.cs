@@ -1,6 +1,6 @@
 namespace Otvetmailru.Entities.Models;
 
-public class Attachments
+public class Attachments : BaseEntity
 {
     
 }

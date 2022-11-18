@@ -1,6 +1,6 @@
 namespace Otvetmailru.Entities.Models;
 
-public class Comments
+public class Comments : BaseEntity
 {
     
 }
