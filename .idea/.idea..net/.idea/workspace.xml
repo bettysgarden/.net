@@ -10,19 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2d0657f-af33-4a74-9ff8-6915db51119a" name="Changes" comment="task 3">
-      <change afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/AnswerHasAttachment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/CommentHasAttachment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/QuestionHasAttachment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea..net/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea..net/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Answer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Answer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Attachments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Attachments.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Comments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Comments.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Likes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Likes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/Question.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entity/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entity/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Entity/Models/Answer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Entity/Models/User.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Otvetmailru.WebAPI/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -164,7 +153,7 @@
       <workItem from="1668591331526" duration="1656000" />
       <workItem from="1668757238149" duration="4747000" />
       <workItem from="1668762908472" duration="64000" />
-      <workItem from="1668934397480" duration="8303000" />
+      <workItem from="1668934397480" duration="9336000" />
     </task>
     <task id="LOCAL-00001" summary="add lab2">
       <created>1667365938779</created>
@@ -243,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669193318324</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="task 3">
+      <created>1669228266279</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669228266279</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
