@@ -35,10 +35,10 @@ public class Context : DbContext
 
         builder.Entity<Answer>().ToTable("answers");
         builder.Entity<Answer>().HasKey(x => x.Id);
-        builder.Entity<Answer>().HasOne(x => x.Question)
-                                .WithMany(x => x.)
-                                .HasForeignKey(x => x.ParentSpecialityId)
-                                .OnDelete(DeleteBehavior.Restrict);
+        // builder.Entity<Answer>().HasOne(x => x.Question)
+        //                         .WithMany(x => x.)
+        //                         .HasForeignKey(x => x.ParentSpecialityId)
+        //                         .OnDelete(DeleteBehavior.Restrict);
 
         #endregion
 
