@@ -16,7 +16,6 @@ public class User : BaseEntity
     public Level Level { get; set; }
     public int CountAnswers { get; set; }
     public int CountQuestions { get; set; }
-    public int CountBest { get; set; }
-    public int Tags { get; set; }
-    
+    public int CountBest { get; set; } 
+    // public Tags Tags { get; set; }
 }

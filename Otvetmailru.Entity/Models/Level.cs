@@ -2,5 +2,7 @@ namespace Otvetmailru.Entities.Models;
 
 public enum Level
 {
-    // погуглить
+    MASTER,
+    MEDIOCRE,
+    JUNIOR
 }

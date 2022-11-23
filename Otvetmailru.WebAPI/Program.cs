@@ -11,11 +11,14 @@ internal class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.AddSerilogConfiguration(); //Add serilog
-        builder.Services.AddVersioningConfiguration(); //add api versioning
-        builder.Services.AddSwaggerConfiguration(); //add swagger configuration
-        builder.Services.AddControllers();
-
+        builder.AddSerilogConfiguration();
+        //builder.Services.AddDbContextConfiguration(configuration);
+        builder.Services.AddVersioningConfiguration();
+        //builder.Services.AddMapperConfiguration();
+        builder.Services.AddControllers(); //1
+        builder.Services.AddSwaggerConfiguration();
+        //builder.Services.AddRepositoryConfiguration();
+        //builder.Services.AddBusinessLogicConfiguration();
         var app = builder.Build();
 
         app.UseSerilogConfiguration(); //use serilog
