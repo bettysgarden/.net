@@ -1,3 +1,5 @@
+using Otvetmailru.Entity.Models;
+
 namespace Otvetmailru.Entities.Models;
 
 public class Comments : BaseEntity
@@ -12,4 +14,7 @@ public class Comments : BaseEntity
     public virtual Answer Answer { get; set; }
     
     public string TextComment   { get; set; }
+    
+    public virtual ICollection<CommentHasAttachment> Attachments { get; set; }
+
 }

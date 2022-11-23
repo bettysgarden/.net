@@ -1,3 +1,5 @@
+using Otvetmailru.Entity;
+
 namespace Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions;
 
 using Otvetmailru.Entities;

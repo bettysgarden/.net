@@ -1,3 +1,5 @@
+using Otvetmailru.Entity.Models;
+
 namespace Otvetmailru.Entities.Models;
 
 public class CommentHasAttachment  : BaseEntity

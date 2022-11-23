@@ -1,3 +1,5 @@
+using Otvetmailru.Entity.Models;
+
 namespace Otvetmailru.Entities.Models;
 
 public class Question : BaseEntity
@@ -9,8 +11,13 @@ public class Question : BaseEntity
     public Category Category { get; set; }
     public string AdditionInfo  { get; set; }
     public bool Status  { get; set; }
+    public Quiz? Quiz { get; set; }
     
-    // public virtual ICollection<Tags> Tags { get; set; }
+    public virtual ICollection<Answer> Answers { get; set; }
+    // public virtual ICollection<Comments> Comments { get; set; }
+    public virtual ICollection<QuestionHasAttachment> Attachments { get; set; }
+
+
 
 
 }

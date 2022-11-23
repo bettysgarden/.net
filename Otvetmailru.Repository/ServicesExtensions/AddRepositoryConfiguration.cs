@@ -1,6 +1,7 @@
 using Otvetmailru.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Otvetmailru.Entity;
 
 namespace Otvetmailru.Repository;
 

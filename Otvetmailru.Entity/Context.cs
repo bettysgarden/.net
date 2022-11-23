@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Otvetmailru.Entities.Models;
+using Otvetmailru.Entity.Models;
 
-namespace Otvetmailru.Entities;
+namespace Otvetmailru.Entity;
 public class Context : DbContext
 {
     public DbSet<User> Users { get; set; }
@@ -20,26 +21,28 @@ public class Context : DbContext
         
         builder.Entity<User>().ToTable("users");
         builder.Entity<User>().HasKey(x => x.Id);
-        
+
         #endregion
         
         #region Questions
 
         builder.Entity<Question>().ToTable("questions");
         builder.Entity<Question>().HasKey(x => x.Id);
-        //builder.Entity<Question>().Property(x => x.UserId).IsRequired(false);
-       
+        builder.Entity<Question>().HasOne(x => x.User)
+            .WithMany(x => x.Questions)
+            .HasForeignKey(x => x.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
+
         #endregion
 
         #region Answers
 
         builder.Entity<Answer>().ToTable("answers");
         builder.Entity<Answer>().HasKey(x => x.Id);
-        // builder.Entity<Answer>().HasOne(x => x.Question)
-        //                         .WithMany(x => x.)
-        //                         .HasForeignKey(x => x.ParentSpecialityId)
-        //                         .OnDelete(DeleteBehavior.Restrict);
-
+        builder.Entity<Answer>().HasOne(x => x.Question)
+            .WithMany(x => x.Answers)
+            .HasForeignKey(x => x.UserId)
+            .OnDelete(DeleteBehavior.Cascade);                                
         #endregion
 
         #region Attachments

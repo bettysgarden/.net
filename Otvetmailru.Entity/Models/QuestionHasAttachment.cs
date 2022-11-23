@@ -1,3 +1,5 @@
+using Otvetmailru.Entity.Models;
+
 namespace Otvetmailru.Entities.Models;
 
 public class QuestionHasAttachment : BaseEntity
@@ -10,4 +12,6 @@ public class QuestionHasAttachment : BaseEntity
     
     public Guid AttachmentsId  { get; set; }
     public virtual Attachments Attachments { get; set; } 
+    
+    
 }
