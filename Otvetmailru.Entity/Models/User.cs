@@ -18,4 +18,5 @@ public class User : BaseEntity
     public int CountQuestions { get; set; }
     public int CountBest { get; set; }
     public int Tags { get; set; }
+    
 }
