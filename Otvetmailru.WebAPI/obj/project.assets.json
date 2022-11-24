@@ -876,6 +876,41 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
+      "Npgsql/6.0.7": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.7",
+          "Npgsql": "6.0.7"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -2797,7 +2832,8 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.10"
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.7"
         },
         "compile": {
           "bin/placeholder/Otvetmailru.Entities.dll": {}
@@ -3917,6 +3953,44 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.1.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Npgsql/6.0.7": {
+      "sha512": "HhD5q/VUJY++tCzc0eCrhtsxmUdP7NxNhUMOdYW6sqpC6NRlFLvUDf5JyRj0gOGkXe3Tn49toaisgvLqlzQ2JQ==",
+      "type": "package",
+      "path": "npgsql/6.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.6.0.7.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.7": {
+      "sha512": "kqwX2V9Znw/QjLDL6SyYEHiy9toMuqMTyCJ4ebQu65FpV8pElYKpOlBbxoyr6YNgqieXEMmpnE0TIoTKsVdeLw==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/6.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.6.0.7.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8343,6 +8417,7 @@
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.11",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.7",
       "Otvetmailru.Repository >= 1.0.0",
       "Serilog.AspNetCore >= 6.1.0-dev-00285",
       "Serilog.Enrichers.CorrelationId >= 3.0.1",
@@ -8358,11 +8433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
+      "projectUniqueName": "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
       "projectName": "Otvetmailru.WebAPI",
-      "projectPath": "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
+      "projectPath": "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
       "packagesPath": "/Users/Elizaveta1/.nuget/packages/",
-      "outputPath": "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.WebAPI/obj/",
+      "outputPath": "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Elizaveta1/.nuget/NuGet/NuGet.Config"
@@ -8377,8 +8452,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Repository/Otvetmailru.Repository.csproj": {
-              "projectPath": "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Repository/Otvetmailru.Repository.csproj"
+            "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Repository/Otvetmailru.Repository.csproj": {
+              "projectPath": "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Repository/Otvetmailru.Repository.csproj"
             }
           }
         }
@@ -8436,6 +8511,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.11, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[6.0.7, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",

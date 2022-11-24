@@ -11,7 +11,7 @@ public class Answer : BaseEntity
     public virtual User User { get; set; }
     
     public string TextAnswer  { get; set; }
-    public ICollection<Likes> AmountOfLikes  { get; set; }
+    public virtual ICollection<Likes> AmountOfLikes  { get; set; }
     public virtual ICollection<Comments> Comments { get; set; }
     public virtual ICollection<AnswerHasAttachment> Attachments { get; set; }
 

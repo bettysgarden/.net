@@ -10,24 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2d0657f-af33-4a74-9ff8-6915db51119a" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea..net/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea..net/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea..net/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea..net/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea..net/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea..net/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea..net/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea..net/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Context.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.net.sln" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Answer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Answer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/AnswerHasAttachment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/AnswerHasAttachment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Attachments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Attachments.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/BaseEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/CommentHasAttachment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/CommentHasAttachment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Comments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Comments.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Likes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Likes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Question.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/QuestionHasAttachment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/QuestionHasAttachment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Quiz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/Quiz.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Models/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Otvetmailru.Entities/Otvetmailru.Entities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Entities/Otvetmailru.Entities.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Repository/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Repository/Repository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/AppConfiguration/ServicesExtensions/AddDbContextConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/AppConfiguration/ServicesExtensions/AddDbContextConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +43,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Entity/Context.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Entity/Models/Answer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Entity/Models/User.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Otvetmailru.Repository/ServicesExtensions/AddRepositoryConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.WebAPI/AppConfiguration/ServicesExtensions/AddDbContextConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Otvetmailru.WebAPI/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="2Gyf6NquxNxHlkM6FAbVUssi7CF" />
   <component name="ProjectLevelVcsManager">
@@ -67,6 +68,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "configurable.group.tools",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MyProjectOtvetmailru">
@@ -178,6 +184,7 @@
       <workItem from="1668757238149" duration="4747000" />
       <workItem from="1668762908472" duration="64000" />
       <workItem from="1668934397480" duration="20306000" />
+      <workItem from="1669296732829" duration="3405000" />
     </task>
     <task id="LOCAL-00001" summary="add lab2">
       <created>1667365938779</created>

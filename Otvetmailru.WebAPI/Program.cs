@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using MyProjectOtvetmailru.AppConfiguration.ServicesExtensions;
+using Otvetmailru.Entity;
 using Otvetmailru.WebAPI.AppConfiguration.ApplicationExtensions;
 using Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions;
 using Otvetmailru.Repository;
@@ -11,7 +13,7 @@ var configuration = new ConfigurationBuilder()
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddSerilogConfiguration();
-builder.Services.AddDbContextConfiguration(configuration);
+builder.Services.AddDbContext <Context> (o => o.UseNpgsql(builder.Configuration.GetConnectionString("Context")));
 builder.Services.AddVersioningConfiguration();
 //builder.Services.AddMapperConfiguration();
 builder.Services.AddControllers(); //1

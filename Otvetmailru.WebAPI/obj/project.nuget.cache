@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nZhfAxBw5HACVgwdhQKzq8Z3Z4GcmDA/0y5ByeZDArwxSeqamb564MBGpdi9pUTp7n2C6Sx9Cf/J+LB7EaoKbw==",
+  "dgSpecHash": "k+HsJwBnivi4fNrk1/c7kODOrCzj07Pqoal5zyp2G4un8oxyFmyXgoXYsmdFIy7pcftC2FCd6HV7gAhrzQFI2w==",
   "success": true,
-  "projectFilePath": "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
+  "projectFilePath": "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj",
   "expectedPackageFiles": [
     "/Users/Elizaveta1/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
     "/Users/Elizaveta1/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
@@ -54,6 +54,8 @@
     "/Users/Elizaveta1/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/Elizaveta1/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "/Users/Elizaveta1/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
+    "/Users/Elizaveta1/.nuget/packages/npgsql/6.0.7/npgsql.6.0.7.nupkg.sha512",
+    "/Users/Elizaveta1/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.7/npgsql.entityframeworkcore.postgresql.6.0.7.nupkg.sha512",
     "/Users/Elizaveta1/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/Elizaveta1/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/Elizaveta1/.nuget/packages/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
