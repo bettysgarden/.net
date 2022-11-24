@@ -26,12 +26,6 @@
             Services extensions
             </summary>
         </member>
-        <member name="M:Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddDbContextConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            Add serilog configuration
-            </summary>
-            <param name="builder"></param>
-        </member>
         <member name="M:Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddSerilogConfiguration(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
             <summary>
             Add serilog configuration
@@ -49,6 +43,12 @@
             Configure versioning
             </summary>
             <param name="services"></param>
+        </member>
+        <member name="M:MyProjectOtvetmailru.AppConfiguration.ServicesExtensions.ServicesExtensions.AddDbContextConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
         </member>
     </members>
 </doc>

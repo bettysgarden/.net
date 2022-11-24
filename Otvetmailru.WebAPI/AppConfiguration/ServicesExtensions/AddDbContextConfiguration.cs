@@ -1,6 +1,7 @@
-using Otvetmailru.Entity;
 using Microsoft.EntityFrameworkCore;
-namespace Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions;
+using Otvetmailru.Entity;
+
+namespace MyProjectOtvetmailru.AppConfiguration.ServicesExtensions;
 
     public static partial class ServicesExtensions
     {
