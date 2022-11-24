@@ -1,54 +1,50 @@
 using Otvetmailru.WebAPI.AppConfiguration.ApplicationExtensions;
 using Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions;
-using Otvetmailru.Entities;
+using Otvetmailru.Repository;
 using Serilog;
 
-namespace MyProjectOtvetmailru;
+var configuration = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json", optional: false)
+    .Build();
 
-internal class Program
+var builder = WebApplication.CreateBuilder(args);
+
+builder.AddSerilogConfiguration();
+builder.Services.AddDbContextConfiguration(configuration);
+builder.Services.AddVersioningConfiguration();
+//builder.Services.AddMapperConfiguration();
+builder.Services.AddControllers(); //1
+builder.Services.AddSwaggerConfiguration();
+builder.Services.AddRepositoryConfiguration();
+//builder.Services.AddBusinessLogicConfiguration();
+
+
+var app = builder.Build();
+
+app.UseSerilogConfiguration();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
 {
-    private static void Main(string[] args)
-    {
-        var builder = WebApplication.CreateBuilder(args);
+    app.UseSwaggerConfiguration();
+}
 
-        builder.AddSerilogConfiguration();
-        //builder.Services.AddDbContextConfiguration(configuration);
-        builder.Services.AddVersioningConfiguration();
-        //builder.Services.AddMapperConfiguration();
-        builder.Services.AddControllers(); //1
-        builder.Services.AddSwaggerConfiguration();
-        //builder.Services.AddRepositoryConfiguration();
-        //builder.Services.AddBusinessLogicConfiguration();
-        var app = builder.Build();
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers(); //2
 
-        app.UseSerilogConfiguration(); //use serilog
+try
+{
+    Log.Information("Application starting...");
 
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwaggerConfiguration(); //use swagger
-        }
-
-        app.UseRouting();
-        app.UseHttpsRedirection();
-        app.UseAuthorization();
-        app.MapControllers();
-        app.UseSerilogRequestLogging();
-
-        try
-        {
-            Log.Information("Application starting...");
-
-            app.Run();
-        }
-        catch (Exception ex)
-        {
-            Log.Error("Application finished with error {Error}", ex);
-        }
-        finally
-        {
-            Log.Information("Application stopped");
-            Log.CloseAndFlush();
-        }
-    }
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Error("Application finished with error {error}", ex);
+}
+finally
+{
+    Log.Information("Application stopped");
+    Log.CloseAndFlush();
 }
