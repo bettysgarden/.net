@@ -11,8 +11,7 @@ public class Question : BaseEntity
     public Category Category { get; set; }
     public string AdditionInfo  { get; set; }
     public bool Status  { get; set; }
-    public Quiz? Quiz { get; set; }
-    
+    public ICollection<Quiz>? Quizzes { get; set; }
     public virtual ICollection<Answer> Answers { get; set; }
     // public virtual ICollection<Comments> Comments { get; set; }
     public virtual ICollection<QuestionHasAttachment> Attachments { get; set; }

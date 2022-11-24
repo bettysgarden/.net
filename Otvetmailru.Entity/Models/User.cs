@@ -21,7 +21,7 @@ public class User : BaseEntity
     public int CountBest { get; set; } 
     
     public virtual ICollection<Question> Questions { get; set; }
-    public virtual ICollection<Answer> Answers { get; set; }
+    public virtual IEnumerable<Answer>? Answers { get; set; }
     public virtual ICollection<Likes> Likes { get; set; }
     public virtual ICollection<Quiz> Quizzes { get; set; }
     public virtual ICollection<Comments> Comments { get; set; }
