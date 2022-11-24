@@ -1804,6 +1804,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Otvetmailru.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.0",
+          "Microsoft.EntityFrameworkCore.Proxies": "7.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "Otvetmailru.Entity": "1.0.0",
+          "System.Diagnostics.Tools": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Otvetmailru.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Otvetmailru.Repository.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -4819,6 +4842,11 @@
       "type": "project",
       "path": "../Otvetmailru.Entity/Otvetmailru.Entity.csproj",
       "msbuildProject": "../Otvetmailru.Entity/Otvetmailru.Entity.csproj"
+    },
+    "Otvetmailru.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Otvetmailru.Repository/Otvetmailru.Repository.csproj",
+      "msbuildProject": "../Otvetmailru.Repository/Otvetmailru.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4834,6 +4862,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
       "Otvetmailru.Entity >= 1.0.0",
+      "Otvetmailru.Repository >= 1.0.0",
       "Serilog.AspNetCore >= 6.1.0-dev-00285",
       "Serilog.Enrichers.CorrelationId >= 3.0.1",
       "Serilog.Expressions >= 3.4.1",
@@ -4869,6 +4898,9 @@
           "projectReferences": {
             "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Entity/Otvetmailru.Entity.csproj": {
               "projectPath": "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Entity/Otvetmailru.Entity.csproj"
+            },
+            "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Repository/Otvetmailru.Repository.csproj": {
+              "projectPath": "/Users/Elizaveta1/RiderProjects/.net/.net/Otvetmailru.Repository/Otvetmailru.Repository.csproj"
             }
           }
         }

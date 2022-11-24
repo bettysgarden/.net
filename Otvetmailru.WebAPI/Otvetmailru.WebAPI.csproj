@@ -33,5 +33,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Otvetmailru.Entity\Otvetmailru.Entity.csproj" />
+    <ProjectReference Include="..\Otvetmailru.Repository\Otvetmailru.Repository.csproj" />
   </ItemGroup>
 </Project>
