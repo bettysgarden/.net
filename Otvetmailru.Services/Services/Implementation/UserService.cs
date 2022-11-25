@@ -1,5 +1,6 @@
 using AutoMapper;
 using Otvetmailru.Entities.Models;
+using Otvetmailru.Entity.Models;
 using Otvetmailru.Repository;
 using Otvetmailru.Services.Abstract;
 using Otvetmailru.Services.Models;

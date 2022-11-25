@@ -15,8 +15,4 @@ public class Question : BaseEntity
     public virtual ICollection<Answer> Answers { get; set; }
     // public virtual ICollection<Comments> Comments { get; set; }
     public virtual ICollection<QuestionHasAttachment> Attachments { get; set; }
-
-
-
-
 }

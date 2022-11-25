@@ -4,5 +4,6 @@ namespace Otvetmailru.Services.Models;
 
 public class CommentHasAttachmentPreviewModel
 {
+    public Guid Id{get;set;}
 
 }

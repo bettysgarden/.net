@@ -1,6 +1,13 @@
+using Otvetmailru.Services.Models;
 namespace Otvetmailru.Services.Abstract;
 
-public class ILikesService
+public interface ILikesService
 {
-    
+    LikesModel GetLikes(Guid id);
+
+    LikesModel UpdateLikes(Guid id, UpdateLikesModel likes);
+
+    void DeleteLikes(Guid id);
+
+    PageModel<LikesPreviewModel> GetLikes(int limit = 20, int offset = 0);
 }
