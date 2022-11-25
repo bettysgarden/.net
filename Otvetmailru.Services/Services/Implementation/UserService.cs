@@ -1,10 +1,10 @@
 using AutoMapper;
 using Otvetmailru.Entities.Models;
 using Otvetmailru.Repository;
-using Otvetmailru.Services.Services.Abstract;
+using Otvetmailru.Services.Abstract;
 using Otvetmailru.Services.Models;
 
-namespace Otvetmailru.Services.Services.Implementation;
+namespace Otvetmailru.Services.Implementation;
 
 public class UserService : IUserService
 {
@@ -56,7 +56,7 @@ public class UserService : IUserService
 
         existingUser.FirstName = user.FirstName;
         existingUser.LastName = user.LastName;
-        existingUser.Patronymic = user.Patronymic;
+        existingUser.SecondName = user.SecondName;
 
         existingUser = usersRepository.Save(existingUser);
         return mapper.Map<UserModel>(existingUser);

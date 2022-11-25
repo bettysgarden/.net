@@ -56,6 +56,36 @@
           }
         }
       },
+      "FluentValidation/11.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.2.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.2.2",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -2858,6 +2888,8 @@
         "dependencies": {
           "AutoMapper": "12.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "FluentValidation": "11.2.2",
+          "FluentValidation.DependencyInjectionExtensions": "11.2.2",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Abstractions": "6.0.10",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
@@ -2879,6 +2911,8 @@
         "dependencies": {
           "AutoMapper": "12.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "FluentValidation": "11.2.2",
+          "FluentValidation.DependencyInjectionExtensions": "11.2.2",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Abstractions": "6.0.10",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
@@ -2892,6 +2926,24 @@
         },
         "runtime": {
           "bin/placeholder/Otvetmailru.Repository.dll": {}
+        }
+      },
+      "Otvetmailru.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "FluentValidation": "11.2.2",
+          "FluentValidation.DependencyInjectionExtensions": "11.2.2",
+          "Otvetmailru.Entities": "1.0.0",
+          "Otvetmailru.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Otvetmailru.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Otvetmailru.Services.dll": {}
         }
       }
     }
@@ -2949,6 +3001,44 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "FluentValidation/11.2.2": {
+      "sha512": "5QEte2BUZZF6Sezeekr7Zu1THfgpxU7pmuL2SjIrajuGMah+pxPGiRiLtw+x/tSUSSVmcv9LrUe41lKu4l0n4A==",
+      "type": "package",
+      "path": "fluentvalidation/11.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.2.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.2.2": {
+      "sha512": "4JFJec9ILLax7vrVN7S6mVzlvc2Lwqu0lN3yl0LUoNVsJ8m1QB/twif/DX05EG+pYD83SWJ07wQ65WePGu2iGg==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.2.2.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "Humanizer.Core/2.8.26": {
@@ -8466,12 +8556,19 @@
       "type": "project",
       "path": "../Otvetmailru.Repository/Otvetmailru.Repository.csproj",
       "msbuildProject": "../Otvetmailru.Repository/Otvetmailru.Repository.csproj"
+    },
+    "Otvetmailru.Services/1.0.0": {
+      "type": "project",
+      "path": "../Otvetmailru.Services/Otvetmailru.Services.csproj",
+      "msbuildProject": "../Otvetmailru.Services/Otvetmailru.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
+      "FluentValidation >= 11.2.2",
+      "FluentValidation.DependencyInjectionExtensions >= 11.2.2",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 5.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.11",
@@ -8484,6 +8581,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.11",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.7",
       "Otvetmailru.Repository >= 1.0.0",
+      "Otvetmailru.Services >= 1.0.0",
       "Serilog.AspNetCore >= 6.1.0-dev-00285",
       "Serilog.Enrichers.CorrelationId >= 3.0.1",
       "Serilog.Expressions >= 3.4.1",
@@ -8519,6 +8617,9 @@
           "projectReferences": {
             "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Repository/Otvetmailru.Repository.csproj": {
               "projectPath": "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Repository/Otvetmailru.Repository.csproj"
+            },
+            "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/Otvetmailru.Services.csproj": {
+              "projectPath": "/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/Otvetmailru.Services.csproj"
             }
           }
         }
@@ -8540,6 +8641,14 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[12.0.0, )"
+          },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.2.2, )"
+          },
+          "FluentValidation.DependencyInjectionExtensions": {
+            "target": "Package",
+            "version": "[11.2.2, )"
           },
           "Microsoft.AspNetCore.Mvc.Versioning": {
             "target": "Package",

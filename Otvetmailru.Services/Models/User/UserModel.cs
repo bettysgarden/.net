@@ -1,6 +1,6 @@
 using Otvetmailru.Entities.Models;
 
-namespace Otvetmailru.Services.Models.User;
+namespace Otvetmailru.Services.Models;
 
 public class UserModel : BaseModel
 {

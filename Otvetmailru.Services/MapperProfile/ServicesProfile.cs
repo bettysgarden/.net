@@ -2,7 +2,7 @@ using AutoMapper;
 using Otvetmailru.Entities.Models;
 using Otvetmailru.Services.Models;
 
-namespace Otvetmailru.Services.MapperServices;
+namespace Otvetmailru.Services.MapperProfile;
 
 public class ServicesProfile : Profile
 {
@@ -12,7 +12,7 @@ public class ServicesProfile : Profile
 
         CreateMap<User, UserModel>().ReverseMap();
         CreateMap<User, UserPreviewModel>()
-            .ForMember(x => x.FullName, y => y.MapFrom(u => $"{u.LastName} {u.FirstName} {u.Patronymic}"));
+            .ForMember(x => x.FullName, y => y.MapFrom(u => $"{u.LastName} {u.FirstName} {u.SecondName}"));
 
         #endregion
     }

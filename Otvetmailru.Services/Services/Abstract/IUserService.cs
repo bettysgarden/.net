@@ -1,6 +1,6 @@
 using Otvetmailru.Services.Models;
 
-namespace Otvetmailru.Services.Services.Abstract;
+namespace Otvetmailru.Services.Abstract;
 
 public interface IUserService
 {
