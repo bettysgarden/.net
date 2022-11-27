@@ -43,7 +43,7 @@ public class CommentsService : ICommentsService
 
         return new PageModel<CommentsPreviewModel>()
         {
-            Items = _mapper.Map<IEnumerable<CommentsPreviewModel>>(comments),
+            Items = _mapper.Map<IEnumerable<CommentsPreviewModel>>(chunk),
             TotalCount = totalCount
         };
     }

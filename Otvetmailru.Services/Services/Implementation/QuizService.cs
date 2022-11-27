@@ -43,7 +43,7 @@ public class QuizService : IQuizService
 
         return new PageModel<QuizPreviewModel>()
         {
-            Items = _mapper.Map<IEnumerable<QuizPreviewModel>>(quiz),
+            Items = _mapper.Map<IEnumerable<QuizPreviewModel>>(chunk),
             TotalCount = totalCount
         };
     }

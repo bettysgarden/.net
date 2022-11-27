@@ -44,7 +44,7 @@ public class QuestionService : IQuestionService
 
         return new PageModel<QuestionPreviewModel>()
         {
-            Items = _mapper.Map<IEnumerable<QuestionPreviewModel>>(question),
+            Items = _mapper.Map<IEnumerable<QuestionPreviewModel>>(chunk),
             TotalCount = totalCount
         };
     }

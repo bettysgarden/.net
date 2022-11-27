@@ -43,7 +43,7 @@ public class AttachmentsService : IAttachmentsService
 
         return new PageModel<AttachmentsPreviewModel>()
         {
-            Items = _mapper.Map<IEnumerable<AttachmentsPreviewModel>>(attachments),
+            Items = _mapper.Map<IEnumerable<AttachmentsPreviewModel>>(chunk),
             TotalCount = totalCount
         };
     }

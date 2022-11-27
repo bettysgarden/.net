@@ -44,7 +44,7 @@ public class AnswerService : IAnswerService
 
         return new PageModel<AnswerPreviewModel>()
         {
-            Items = mapper.Map<IEnumerable<AnswerPreviewModel>>(answer),
+            Items = mapper.Map<IEnumerable<AnswerPreviewModel>>(chunk),
             TotalCount = totalCount
         };
     }

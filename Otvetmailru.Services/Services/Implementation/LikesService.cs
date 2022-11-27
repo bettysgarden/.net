@@ -43,7 +43,7 @@ public class LikesService : ILikesService
 
         return new PageModel<LikesPreviewModel>()
         {
-            Items = _mapper.Map<IEnumerable<LikesPreviewModel>>(likes),
+            Items = _mapper.Map<IEnumerable<LikesPreviewModel>>(chunk),
             TotalCount = totalCount
         };
     }

@@ -42,7 +42,7 @@ public class UserService : IUserService
 
         return new PageModel<UserPreviewModel>()
         {
-            Items = mapper.Map<IEnumerable<UserPreviewModel>>(users),
+            Items = mapper.Map<IEnumerable<UserPreviewModel>>(chunk),
             TotalCount = totalCount
         };
     }
