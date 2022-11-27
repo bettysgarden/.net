@@ -4,6 +4,7 @@ using Otvetmailru.Entity;
 using Otvetmailru.WebAPI.AppConfiguration.ApplicationExtensions;
 using Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions;
 using Otvetmailru.Repository;
+using Otvetmailru.Services;
 using Serilog;
 
 var configuration = new ConfigurationBuilder()
@@ -15,11 +16,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddSerilogConfiguration();
 builder.Services.AddDbContext <Context> (o => o.UseNpgsql(builder.Configuration.GetConnectionString("Context")));
 builder.Services.AddVersioningConfiguration();
-//builder.Services.AddMapperConfiguration();
+builder.Services.AddMapperConfiguration();
 builder.Services.AddControllers(); //1
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddRepositoryConfiguration();
-//builder.Services.AddBusinessLogicConfiguration();
+builder.Services.AddBusinessLogicConfiguration();
 
 
 var app = builder.Build();
