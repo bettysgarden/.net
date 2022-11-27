@@ -8,12 +8,12 @@ namespace Otvetmailru.Repository
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         private DbContext _context;
-        private ILogger<Repository<T>> logger;
+        private ILogger<Repository<T>> _logger;
 
         public Repository(DbContext context, ILogger<Repository<T>> logger)
         {
             _context = context;
-            this.logger = logger;
+            this._logger = logger;
         }
         public void Delete(T obj)
         {
@@ -69,7 +69,7 @@ namespace Otvetmailru.Repository
             }
             catch (Exception ex)
             {
-                logger.LogError(ex.ToString());
+                _logger.LogError(ex.ToString());
                 throw ex;
             }
         }

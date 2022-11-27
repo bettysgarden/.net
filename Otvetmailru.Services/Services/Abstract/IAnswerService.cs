@@ -11,4 +11,5 @@ public interface IAnswerService
     void DeleteAnswer(Guid id);
 
     PageModel<AnswerPreviewModel> GetAnswer(int limit = 20, int offset = 0);
+    object GetAnswers(int limit, int offset);
 }

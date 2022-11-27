@@ -3,6 +3,9 @@ namespace Otvetmailru.Entities.Models;
 public class Quiz : BaseEntity
 {
     public Guid QuestionId  { get; set; }
+    
+    public string TextQuiz { get; set; }
+
     public virtual Question Question { get; set; }
     
     public Guid UserId  { get; set; }

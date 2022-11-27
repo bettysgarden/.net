@@ -5,7 +5,7 @@ public interface IQuestionService
 {
     QuestionModel GetQuestion(Guid id);
 
-    QuestionModel UpdateQuestion(Guid id, UpdateQuestionModel Question);
+    QuestionModel UpdateQuestion(Guid id, UpdateQuestionModel question);
 
     void DeleteQuestion(Guid id);
 

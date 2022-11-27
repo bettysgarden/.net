@@ -55,6 +55,8 @@ public class QuizService : IQuizService
         {
             throw new Exception("Quiz not found");
         }
+        existingQuiz.TextQuiz = quiz.TextQuiz;
+
         existingQuiz = _quizRepository.Save(existingQuiz);
         return _mapper.Map<QuizModel>(existingQuiz);
     }

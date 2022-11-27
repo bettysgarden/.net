@@ -5,6 +5,7 @@ namespace Otvetmailru.Services.Models;
 public class QuizPreviewModel
 {
     public Guid Id { get; set; }
+    public string TextQuiz { get; set; }
     // public Guid QuestionId  { get; set; }
     public DateTime FinishDate  { get; set; }
 }

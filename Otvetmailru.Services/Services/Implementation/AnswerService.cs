@@ -49,6 +49,11 @@ public class AnswerService : IAnswerService
         };
     }
 
+    public object GetAnswers(int limit, int offset)
+    {
+        throw new NotImplementedException();
+    }
+
     public AnswerModel UpdateAnswer(Guid id, UpdateAnswerModel answer)
     {
         var existingAnswer = _answerRepository.GetById(id);
