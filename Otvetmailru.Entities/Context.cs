@@ -8,10 +8,8 @@ public class Context : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<Answer> Answers { get; set; }
     public DbSet<Attachments> Attachments { get; set; }
-    public DbSet<Comments> Comments { get; set; }
     public DbSet<Likes> Likes { get; set; }
     public DbSet<Question> Questions { get; set; }
-    public DbSet<Quiz> Quizzes { get; set; }
 
     public Context(DbContextOptions<Context> options) : base(options) { }
 
@@ -47,6 +45,10 @@ public class Context : DbContext
             .WithMany(x => x.Answers)
             .HasForeignKey(x => x.UserId)
             .OnDelete(DeleteBehavior.Cascade);
+        builder.Entity<Answer>().HasOne(x => x.ParentAnswer)
+            .WithMany(x => x.ChildrenAnswers)
+            .HasForeignKey(x => x.ParentAnswerId)
+            .OnDelete(DeleteBehavior.Restrict);
         #endregion
 
         #region Attachments
@@ -54,21 +56,6 @@ public class Context : DbContext
         builder.Entity<Attachments>().ToTable("attachments");
         builder.Entity<Attachments>().HasKey(x => x.Id);
 
-        #endregion
-
-        #region Comments
-
-        builder.Entity<Comments>().ToTable("comments");
-        builder.Entity<Comments>().HasKey(x => x.Id);
-        
-        builder.Entity<Comments>().HasOne(x => x.Answer)
-            .WithMany(x => x.Comments)
-            .HasForeignKey(x => x.AnswerId)
-            .OnDelete(DeleteBehavior.Cascade);    
-        builder.Entity<Comments>().HasOne(x => x.User)
-            .WithMany(x => x.Comments)
-            .HasForeignKey(x => x.UserId)
-            .OnDelete(DeleteBehavior.Cascade);
         #endregion
 
         #region Likes
@@ -85,21 +72,7 @@ public class Context : DbContext
             .HasForeignKey(x => x.UserId)
             .OnDelete(DeleteBehavior.Cascade);
         #endregion
-
-        #region Quizzes
-
-        builder.Entity<Quiz>().ToTable("quizzes");
-        builder.Entity<Quiz>().HasKey(x => x.Id);
-        builder.Entity<Quiz>().HasOne(x => x.Question)
-            .WithMany(x => x.Quizzes)
-            .HasForeignKey(x => x.QuestionId)
-            .OnDelete(DeleteBehavior.Cascade);    
-        builder.Entity<Quiz>().HasOne(x => x.User)
-            .WithMany(x => x.Quizzes)
-            .HasForeignKey(x => x.UserId)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        #endregion
+        
         
         #region AnswerHasAttachment
 
@@ -126,21 +99,6 @@ public class Context : DbContext
             .OnDelete(DeleteBehavior.Cascade);    
         builder.Entity<QuestionHasAttachment>().HasOne(x => x.Attachments)
             .WithMany(x => x.QuestionHasAttachments)
-            .HasForeignKey(x => x.AttachmentsId)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        #endregion
-        
-        #region CommentHasAttachment
-
-        builder.Entity<CommentHasAttachment>().ToTable("commentHasAttachment");
-        builder.Entity<CommentHasAttachment>().HasKey(x => x.Id);
-        builder.Entity<CommentHasAttachment>().HasOne(x => x.Comments)
-            .WithMany(x => x.Attachments)
-            .HasForeignKey(x => x.CommentId)
-            .OnDelete(DeleteBehavior.Cascade);    
-        builder.Entity<CommentHasAttachment>().HasOne(x => x.Attachments)
-            .WithMany(x => x.CommentHasAttachments)
             .HasForeignKey(x => x.AttachmentsId)
             .OnDelete(DeleteBehavior.Cascade);
 

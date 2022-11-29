@@ -100,4 +100,14 @@ namespace Otvetmailru.WebAPI.Controllers;
                 return BadRequest(ex.ToString());
             }
         }
+        /// <summary>
+        /// create Likes
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult CreateLikes([FromBody] CreateLikesModel likes)
+        {
+            var response =_likesService.CreateLikes(likes);
+            return Ok(response);
+        }
     }

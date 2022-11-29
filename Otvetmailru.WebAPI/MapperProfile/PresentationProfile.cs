@@ -22,19 +22,13 @@ public class PresentationProfile : Profile
 
         #endregion
         
-        #region Quiz
-
-        CreateMap<QuizModel, QuizResponse>();
-        CreateMap<UpdateQuizRequest, UpdateQuizModel>();
-        CreateMap<QuizPreviewModel, QuizPreviewResponse>();
-
-        #endregion
-        
         #region Question
 
         CreateMap<QuestionModel, QuestionResponse>();
         CreateMap<UpdateQuestionRequest, UpdateQuestionModel>();
         CreateMap<QuestionPreviewModel, QuestionPreviewResponse>();
+        CreateMap<CreateQuestionRequest, CreateQuestionModel>();
+
 
         #endregion
         
@@ -43,22 +37,18 @@ public class PresentationProfile : Profile
         CreateMap<LikesModel, LikesResponse>();
         CreateMap<UpdateLikesRequest, UpdateLikesModel>();
         CreateMap<LikesPreviewModel, LikesPreviewResponse>();
+        CreateMap<CreateLikesRequest, CreateLikesModel>();
+
         
         #endregion
-        
-        #region Comments
 
-        CreateMap<CommentsModel, CommentsResponse>();
-        CreateMap<UpdateCommentsRequest, UpdateCommentsModel>();
-        CreateMap<CommentsPreviewModel, CommentsPreviewResponse>();
-
-        #endregion
-        
         #region Attachments
 
         CreateMap<AttachmentsModel, AttachmentsResponse>();
         CreateMap<UpdateAtachmentsRequest, UpdateAttachmentsModel>();
         CreateMap<AttachmentsPreviewModel, AttachmentsPreviewResponse>();
+        CreateMap<CreateAttachmentsRequest, CreateAttachmentsModel>();
+
 
         #endregion
         
@@ -67,6 +57,8 @@ public class PresentationProfile : Profile
         CreateMap<AnswerModel, AnswerResponse>();
         CreateMap<UpdateAnswerRequest, UpdateAnswerModel>();
         CreateMap<AnswerPreviewModel, AnswerPreviewResponse>();
+        CreateMap<CreateAnswerRequest, CreateAnswerModel>();
+
 
         #endregion
     }

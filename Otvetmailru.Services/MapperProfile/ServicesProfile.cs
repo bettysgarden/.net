@@ -20,35 +20,32 @@ public class ServicesProfile : Profile
         #region Answers
         CreateMap<Answer, AnswerModel>().ReverseMap();
         CreateMap<Answer, AnswerPreviewModel>();
+        CreateMap<CreateAnswerModel, Answer>();
+
         #endregion
         
         #region Attachments
         CreateMap<Attachments, AttachmentsModel>().ReverseMap(); 
         CreateMap<Attachments, AnswerPreviewModel>(); 
+        CreateMap<CreateAttachmentsModel, Attachments>();
 
-        #endregion       
-        
-        #region Comments
-        CreateMap<Comments, CommentsModel>().ReverseMap(); 
-        CreateMap<Comments, CommentsPreviewModel>(); 
 
         #endregion
-        
-                
+
         #region Likes
         CreateMap<Likes, LikesModel>().ReverseMap(); 
         CreateMap<Likes, LikesPreviewModel>();
+        CreateMap<CreateLikesModel, Likes>();
+
         #endregion
         
         #region Question
         CreateMap<Question, QuestionModel>().ReverseMap(); 
         CreateMap<Question, QuestionPreviewModel>();
+        CreateMap<CreateQuestionModel, Question>();
+
         #endregion
         
-        #region Quiz
-        CreateMap<Quiz, QuizModel>().ReverseMap(); 
-        CreateMap<Quiz, QuizPreviewModel>();
-        #endregion
 
     }
 }

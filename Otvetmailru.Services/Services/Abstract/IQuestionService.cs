@@ -3,6 +3,8 @@ namespace Otvetmailru.Services.Abstract;
 
 public interface IQuestionService
 {
+    QuestionModel CreateQuestion(CreateQuestionModel questionModel);
+
     QuestionModel GetQuestion(Guid id);
 
     QuestionModel UpdateQuestion(Guid id, UpdateQuestionModel question);

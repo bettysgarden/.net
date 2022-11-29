@@ -100,4 +100,14 @@ namespace Otvetmailru.WebAPI.Controllers;
                 return BadRequest(ex.ToString());
             }
         }
+        /// <summary>
+        /// create Question
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult CreateQuestion([FromBody] CreateQuestionModel question)
+        {
+            var response = _questionService.CreateQuestion(question);
+            return Ok(response);
+        }
     }

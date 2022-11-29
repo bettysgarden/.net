@@ -28,6 +28,12 @@ public class QuestionService : IQuestionService
         _questionRepository.Delete(questionToDelete);
     }
 
+    public QuestionModel CreateQuestion(CreateQuestionModel questionModel)
+    {
+        Question question = _mapper.Map<Question>(questionModel);
+        return _mapper.Map<QuestionModel>(_questionRepository.Save(question));
+    }
+
     public QuestionModel GetQuestion(Guid id)
     {
         var question =_questionRepository.GetById(id);

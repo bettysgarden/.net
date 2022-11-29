@@ -4,6 +4,8 @@ namespace Otvetmailru.Services.Abstract;
 
 public interface IAnswerService
 {
+    AnswerModel CreateAnswer(CreateAnswerModel createAnswerModel);
+
     AnswerModel GetAnswer(Guid id);
 
     AnswerModel UpdateAnswer(Guid id, UpdateAnswerModel answer);
@@ -11,5 +13,4 @@ public interface IAnswerService
     void DeleteAnswer(Guid id);
 
     PageModel<AnswerPreviewModel> GetAnswer(int limit = 20, int offset = 0);
-    object GetAnswers(int limit, int offset);
 }

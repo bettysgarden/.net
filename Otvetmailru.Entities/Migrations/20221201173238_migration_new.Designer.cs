@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Otvetmailru.Entity;
@@ -11,9 +12,10 @@ using Otvetmailru.Entity;
 namespace Otvetmailru.Entities.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20221201173238_migration_new")]
+    partial class migration_new
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -57,79 +59,6 @@ namespace Otvetmailru.Entities.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("answerHasAttachment", (string)null);
-                });
-
-            modelBuilder.Entity("Otvetmailru.Entities.Models.CommentHasAttachment", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("AttachmentsId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("CommentId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("ModificationTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("QuestionId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AttachmentsId");
-
-                    b.HasIndex("CommentId");
-
-                    b.HasIndex("QuestionId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("commentHasAttachment", (string)null);
-                });
-
-            modelBuilder.Entity("Otvetmailru.Entities.Models.Comments", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("AnswerId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("ModificationTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("QuestionId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("TextComment")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AnswerId");
-
-                    b.HasIndex("QuestionId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("comments", (string)null);
                 });
 
             modelBuilder.Entity("Otvetmailru.Entities.Models.Likes", b =>
@@ -227,36 +156,6 @@ namespace Otvetmailru.Entities.Migrations
                     b.ToTable("questionHasAttachment", (string)null);
                 });
 
-            modelBuilder.Entity("Otvetmailru.Entities.Models.Quiz", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("FinishDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("ModificationTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("QuestionId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("QuestionId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("quizzes", (string)null);
-                });
-
             modelBuilder.Entity("Otvetmailru.Entities.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -290,19 +189,12 @@ namespace Otvetmailru.Entities.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("Level")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Login")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("ModificationTime")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Nickname")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
@@ -411,68 +303,6 @@ namespace Otvetmailru.Entities.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Otvetmailru.Entities.Models.CommentHasAttachment", b =>
-                {
-                    b.HasOne("Otvetmailru.Entity.Models.Attachments", "Attachments")
-                        .WithMany("CommentHasAttachments")
-                        .HasForeignKey("AttachmentsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Otvetmailru.Entities.Models.Comments", "Comments")
-                        .WithMany("Attachments")
-                        .HasForeignKey("CommentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Otvetmailru.Entities.Models.Question", "Question")
-                        .WithMany()
-                        .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Otvetmailru.Entities.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Attachments");
-
-                    b.Navigation("Comments");
-
-                    b.Navigation("Question");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Otvetmailru.Entities.Models.Comments", b =>
-                {
-                    b.HasOne("Otvetmailru.Entity.Models.Answer", "Answer")
-                        .WithMany("Comments")
-                        .HasForeignKey("AnswerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Otvetmailru.Entities.Models.Question", "Question")
-                        .WithMany()
-                        .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Otvetmailru.Entities.Models.User", "User")
-                        .WithMany("Comments")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Answer");
-
-                    b.Navigation("Question");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Otvetmailru.Entities.Models.Likes", b =>
                 {
                     b.HasOne("Otvetmailru.Entity.Models.Answer", "Answer")
@@ -530,25 +360,6 @@ namespace Otvetmailru.Entities.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Otvetmailru.Entities.Models.Quiz", b =>
-                {
-                    b.HasOne("Otvetmailru.Entities.Models.Question", "Question")
-                        .WithMany("Quizzes")
-                        .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Otvetmailru.Entities.Models.User", "User")
-                        .WithMany("Quizzes")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Question");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Otvetmailru.Entity.Models.Answer", b =>
                 {
                     b.HasOne("Otvetmailru.Entities.Models.Question", "Question")
@@ -566,11 +377,6 @@ namespace Otvetmailru.Entities.Migrations
                     b.Navigation("Question");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Otvetmailru.Entities.Models.Comments", b =>
-                {
-                    b.Navigation("Attachments");
                 });
 
             modelBuilder.Entity("Otvetmailru.Entities.Models.Question", b =>
@@ -578,21 +384,15 @@ namespace Otvetmailru.Entities.Migrations
                     b.Navigation("Answers");
 
                     b.Navigation("Attachments");
-
-                    b.Navigation("Quizzes");
                 });
 
             modelBuilder.Entity("Otvetmailru.Entities.Models.User", b =>
                 {
                     b.Navigation("Answers");
 
-                    b.Navigation("Comments");
-
                     b.Navigation("Likes");
 
                     b.Navigation("Questions");
-
-                    b.Navigation("Quizzes");
                 });
 
             modelBuilder.Entity("Otvetmailru.Entity.Models.Answer", b =>
@@ -600,15 +400,11 @@ namespace Otvetmailru.Entities.Migrations
                     b.Navigation("AmountOfLikes");
 
                     b.Navigation("Attachments");
-
-                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("Otvetmailru.Entity.Models.Attachments", b =>
                 {
                     b.Navigation("AnswerHasAttachments");
-
-                    b.Navigation("CommentHasAttachments");
 
                     b.Navigation("QuestionHasAttachments");
                 });

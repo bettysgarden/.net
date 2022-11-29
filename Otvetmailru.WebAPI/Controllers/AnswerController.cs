@@ -98,4 +98,14 @@ namespace Otvetmailru.WebAPI.Controllers;
                 return BadRequest(ex.ToString());
             }
         }
+        /// <summary>
+        /// create Answer
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult CreateAnswer([FromBody] CreateAnswerModel answer)
+        {
+            var response =_answerService.CreateAnswer(answer);
+            return Ok(response);
+        }
     }

@@ -26,6 +26,12 @@
             Services extensions
             </summary>
         </member>
+        <member name="M:Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddMapperConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
+        </member>
         <member name="M:Otvetmailru.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddSerilogConfiguration(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
             <summary>
             Add serilog configuration
@@ -43,6 +49,161 @@
             Configure versioning
             </summary>
             <param name="services"></param>
+        </member>
+        <member name="T:Otvetmailru.WebAPI.Controllers.AnswerController">
+            <summary>
+            Doctors endpoints
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AnswerController.#ctor(Otvetmailru.Services.Abstract.IAnswerService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AnswerController.GetAnswer(System.Int32,System.Int32)">
+            <summary>
+            Get Answers by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AnswerController.UpdateAnswer(System.Guid,Otvetmailru.WebAPI.Models.UpdateAnswerRequest)">
+            <summary>
+            Update Answer
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AnswerController.DeleteAnswer(System.Guid)">
+            <summary>
+            Delete Answer
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AnswerController.GetAnswer(System.Guid)">
+            <summary>
+            Get Answer
+            </summary>
+        </member>
+        <member name="T:Otvetmailru.WebAPI.Controllers.AttachmentController">
+            <summary>
+            Doctors endpoints
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AttachmentController.#ctor(Otvetmailru.Services.Abstract.IAttachmentsService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AttachmentController.GetAttachments(System.Int32,System.Int32)">
+            <summary>
+            Get Attachments by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AttachmentController.UpdateAttachment(System.Guid,Otvetmailru.WebAPI.Models.UpdateAtachmentsRequest)">
+            <summary>
+            Update Attachment
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AttachmentController.DeleteAttachment(System.Guid)">
+            <summary>
+            Delete Attachment
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.AttachmentController.GetAttachment(System.Guid)">
+            <summary>
+            Get Attachment
+            </summary>
+        </member>
+        <member name="T:Otvetmailru.WebAPI.Controllers.LikesController">
+            <summary>
+            Doctors endpoints
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.LikesController.#ctor(Otvetmailru.Services.Abstract.ILikesService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.LikesController.GetLikes(System.Int32,System.Int32)">
+            <summary>
+            Get Likess by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.LikesController.UpdateLikes(System.Guid,Otvetmailru.WebAPI.Models.UpdateLikesRequest)">
+            <summary>
+            Update Likes
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.LikesController.DeleteLikes(System.Guid)">
+            <summary>
+            Delete Likes
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.LikesController.GetLikes(System.Guid)">
+            <summary>
+            Get Likes
+            </summary>
+        </member>
+        <member name="T:Otvetmailru.WebAPI.Controllers.QuestionController">
+            <summary>
+            Doctors endpoints
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.QuestionController.#ctor(Otvetmailru.Services.Abstract.IQuestionService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.QuestionController.GetQuestions(System.Int32,System.Int32)">
+            <summary>
+            Get Questions by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.QuestionController.UpdateQuestion(System.Guid,Otvetmailru.WebAPI.Models.UpdateQuestionRequest)">
+            <summary>
+            Update Question
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.QuestionController.DeleteQuestion(System.Guid)">
+            <summary>
+            Delete Question
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.QuestionController.GetQuestion(System.Guid)">
+            <summary>
+            Get Question
+            </summary>
+        </member>
+        <member name="T:Otvetmailru.WebAPI.Controllers.UsersController">
+            <summary>
+            Doctors endpoints
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.UsersController.#ctor(Otvetmailru.Services.Abstract.IUserService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.UsersController.GetUsers(System.Int32,System.Int32)">
+            <summary>
+            Get users by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.UsersController.UpdateUser(System.Guid,Otvetmailru.WebAPI.Models.UpdateUserRequest)">
+            <summary>
+            Update user
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.UsersController.DeleteUser(System.Guid)">
+            <summary>
+            Delete user
+            </summary>
+        </member>
+        <member name="M:Otvetmailru.WebAPI.Controllers.UsersController.GetUser(System.Guid)">
+            <summary>
+            Get user
+            </summary>
         </member>
         <member name="M:MyProjectOtvetmailru.AppConfiguration.ServicesExtensions.ServicesExtensions.AddDbContextConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>

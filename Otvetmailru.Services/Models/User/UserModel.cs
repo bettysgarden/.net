@@ -15,7 +15,6 @@ public class UserModel : BaseModel
     public DateTime Birthday { get; set; }
     
     public bool Vip { get; set; }
-    public Level Level { get; set; }
     public int CountAnswers { get; set; }
     public int CountQuestions { get; set; }
     public int CountBest { get; set; } 
