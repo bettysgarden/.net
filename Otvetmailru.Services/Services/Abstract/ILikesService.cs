@@ -3,6 +3,8 @@ namespace Otvetmailru.Services.Abstract;
 
 public interface ILikesService
 {
+    LikesModel CreateLikes(CreateLikesModel likesModel);
+
     LikesModel GetLikes(Guid id);
 
     LikesModel UpdateLikes(Guid id, UpdateLikesModel likes);

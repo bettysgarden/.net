@@ -10,12 +10,12 @@ public class AnswerService : IAnswerService
 {
 
     private readonly IRepository<Answer> _answerRepository;
-    private readonly IMapper mapper;
+    private readonly IMapper _mapper;
     
     public AnswerService(IRepository<Answer> answerRepository, IMapper mapper)
     {
         this._answerRepository=answerRepository;
-        this.mapper = mapper;
+        this._mapper = mapper;
     }
 
     public void DeleteAnswer(Guid id)
@@ -28,10 +28,17 @@ public class AnswerService : IAnswerService
         _answerRepository.Delete(answerToDelete);
     }
 
+
+    public AnswerModel CreateAnswer(CreateAnswerModel createAnswerModel)
+    {
+        Answer answer = _mapper.Map<Answer>(createAnswerModel);
+        return _mapper.Map<AnswerModel>(_answerRepository.Save(answer));
+    }
+
     public AnswerModel GetAnswer(Guid id)
     {
         var answer =_answerRepository.GetById(id);
-        return mapper.Map<AnswerModel>(answer);
+        return _mapper.Map<AnswerModel>(answer);
     }
 
     public PageModel<AnswerPreviewModel> GetAnswer(int limit = 20, int offset = 0)
@@ -44,14 +51,9 @@ public class AnswerService : IAnswerService
 
         return new PageModel<AnswerPreviewModel>()
         {
-            Items = mapper.Map<IEnumerable<AnswerPreviewModel>>(chunk),
+            Items = _mapper.Map<IEnumerable<AnswerPreviewModel>>(chunk),
             TotalCount = totalCount
         };
-    }
-
-    public object GetAnswers(int limit, int offset)
-    {
-        throw new NotImplementedException();
     }
 
     public AnswerModel UpdateAnswer(Guid id, UpdateAnswerModel answer)
@@ -63,6 +65,6 @@ public class AnswerService : IAnswerService
         }
         existingAnswer.TextAnswer = answer.TextAnswer;
         existingAnswer = _answerRepository.Save(existingAnswer);
-        return mapper.Map<AnswerModel>(existingAnswer);
+        return _mapper.Map<AnswerModel>(existingAnswer);
     }
 }

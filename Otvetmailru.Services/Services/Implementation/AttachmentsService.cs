@@ -27,6 +27,12 @@ public class AttachmentsService : IAttachmentsService
         _attachmentsRepository.Delete(attachmentsToDelete);
     }
 
+    public AttachmentsModel CreateAttachments(CreateAttachmentsModel attachmentsModel)
+    {
+        Attachments attachment = _mapper.Map<Attachments>(attachmentsModel);
+        return _mapper.Map<AttachmentsModel>(_attachmentsRepository.Save(attachment));
+    }
+
     public AttachmentsModel GetAttachments(Guid id)
     {
         var attachments =_attachmentsRepository.GetById(id);

@@ -20,9 +20,7 @@ public static partial class ServicesExtensions
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAnswerService, AnswerService>();
         services.AddScoped<IAttachmentsService, AttachmentsService>();
-        services.AddScoped<ICommentsService, CommentsService>();
         services.AddScoped<ILikesService, LikesService>();
         services.AddScoped<IQuestionService, QuestionService>();
-        services.AddScoped<IQuizService, QuizService>();
     }
 }
