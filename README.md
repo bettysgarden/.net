@@ -35,4 +35,4 @@ Delete
 -----------------------------------
 Если есть желание усложнить задачу, добавьте использование технологии SignalR, чтобы ответы появлялись автоматически онлайн без необходимости рефрешить страницу.
 
-![Screenshot 2022-11-18 at 11 26 03](https://user-images.githubusercontent.com/99659178/202655921-baedaad0-10e2-4ed3-a278-ec11681586af.png)
+<img width="786" alt="Screenshot 2022-12-01 at 20 21 49" src="https://user-images.githubusercontent.com/99659178/205118866-e17fe7b3-80a5-4ea5-b814-a9567264b1d7.png">
