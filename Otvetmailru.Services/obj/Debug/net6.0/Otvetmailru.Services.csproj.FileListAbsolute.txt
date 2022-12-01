@@ -1,0 +1,17 @@
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.csproj.AssemblyReference.cache
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.AssemblyInfoInputs.cache
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.AssemblyInfo.cs
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.csproj.CoreCompileInputs.cache
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.deps.json
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.dll
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.pdb
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Entities.dll
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Repository.dll
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Entities.pdb
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Repository.pdb
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.csproj.CopyComplete
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.dll
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/refint/Otvetmailru.Services.dll
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.pdb
+/Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.Services/obj/Debug/net6.0/ref/Otvetmailru.Services.dll
