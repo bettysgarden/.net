@@ -9,7 +9,20 @@
     <projectFile profileName="Otvetmailru.Repository">Otvetmailru.Repository/Otvetmailru.Repository.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2d0657f-af33-4a74-9ff8-6915db51119a" name="Changes" comment="" />
+    <list default="true" id="b2d0657f-af33-4a74-9ff8-6915db51119a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/ref/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/ref/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/refint/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/refint/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +35,6 @@
     <setting file="file://$PROJECT_DIR$/Otvetmailru.Repository/ServicesExtensions/AddRepositoryConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Otvetmailru.Services/ServicesExtensions/AddBusinessLogicConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Otvetmailru.Shared/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.WebAPI/AppConfiguration/ServicesExtensions/AddMapperConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
