@@ -100,14 +100,4 @@ namespace Otvetmailru.WebAPI.Controllers;
                 return BadRequest(ex.ToString());
             }
         }
-        /// <summary>
-        /// create Attachment
-        /// </summary>
-        /// <returns></returns>
-        [HttpPost]
-        public IActionResult CreateAttachment([FromBody] CreateAttachmentsModel attachment)
-        {
-            var response =_attachmentService.CreateAttachments(attachment);
-            return Ok(response);
-        }
     }

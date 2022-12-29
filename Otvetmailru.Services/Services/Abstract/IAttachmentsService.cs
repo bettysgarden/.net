@@ -4,8 +4,6 @@ namespace Otvetmailru.Services.Abstract;
 
 public interface IAttachmentsService
 {
-    AttachmentsModel CreateAttachments(CreateAttachmentsModel createAttachmentsModel);
-
     AttachmentsModel GetAttachments(Guid id);
 
     AttachmentsModel UpdateAttachments(Guid id, UpdateAttachmentsModel attachments);

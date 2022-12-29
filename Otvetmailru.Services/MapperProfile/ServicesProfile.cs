@@ -26,16 +26,13 @@ public class ServicesProfile : Profile
         
         #region Attachments
         CreateMap<Attachments, AttachmentsModel>().ReverseMap(); 
-        CreateMap<Attachments, AnswerPreviewModel>(); 
-        CreateMap<CreateAttachmentsModel, Attachments>();
-
+        CreateMap<Attachments, AnswerPreviewModel>();
 
         #endregion
 
         #region Likes
         CreateMap<Likes, LikesModel>().ReverseMap(); 
         CreateMap<Likes, LikesPreviewModel>();
-        CreateMap<CreateLikesModel, Likes>();
 
         #endregion
         

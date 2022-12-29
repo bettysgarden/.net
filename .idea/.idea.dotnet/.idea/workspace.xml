@@ -11,17 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="b2d0657f-af33-4a74-9ff8-6915db51119a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/ref/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/ref/Otvetmailru.Services.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/refint/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/refint/Otvetmailru.Services.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/MapperProfile/ServicesProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/MapperProfile/ServicesProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Models/Attachments/CreateAttachmentsModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Models/Likes/CreateLikesModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Models/Question/CreateQuestionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Models/Question/CreateQuestionModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/IAttachmentsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/IAttachmentsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/ILikesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/ILikesService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/AttachmentsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/AttachmentsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/LikesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/LikesService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Shared/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Shared/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AttachmentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AttachmentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/LikesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/LikesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/MapperProfile/PresentationProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/MapperProfile/PresentationProfile.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/Elizaveta1/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/Users/Elizaveta1/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/Users/Elizaveta1/.local/share/Symbols/src"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MyProjectOtvetmailru">
     <configuration name="MyProjectOtvetmailru" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Otvetmailru.WebAPI/Otvetmailru.WebAPI.csproj" />
@@ -173,6 +182,9 @@
       <workItem from="1669315388659" duration="12145000" />
       <workItem from="1669404706895" duration="713000" />
       <workItem from="1669567736010" duration="6613000" />
+      <workItem from="1669921481837" duration="292000" />
+      <workItem from="1670518958469" duration="554000" />
+      <workItem from="1672303487177" duration="1259000" />
     </task>
     <task id="LOCAL-00001" summary="add lab2">
       <created>1667365938779</created>
@@ -363,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669574740123</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="task 4">
+      <created>1669921510268</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669921510268</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,8 +413,8 @@
     <MESSAGE value="task 3" />
     <MESSAGE value="update" />
     <MESSAGE value="mapper profile upd" />
-    <MESSAGE value="task 4" />
     <MESSAGE value="task 4 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 4 completed" />
+    <MESSAGE value="task 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 4" />
   </component>
 </project>

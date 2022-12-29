@@ -26,13 +26,6 @@ public class LikesService : ILikesService
         }
         _likesRepository.Delete(likesToDelete);
     }
-
-    public LikesModel CreateLikes(CreateLikesModel likesModel)
-    {
-        Likes likes = _mapper.Map<Likes>(likesModel);
-        return _mapper.Map<LikesModel>(_likesRepository.Save(likes));
-    }
-
     public LikesModel GetLikes(Guid id)
     {
         var likes =_likesRepository.GetById(id);

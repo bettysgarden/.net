@@ -37,9 +37,7 @@ public class PresentationProfile : Profile
         CreateMap<LikesModel, LikesResponse>();
         CreateMap<UpdateLikesRequest, UpdateLikesModel>();
         CreateMap<LikesPreviewModel, LikesPreviewResponse>();
-        CreateMap<CreateLikesRequest, CreateLikesModel>();
 
-        
         #endregion
 
         #region Attachments
@@ -47,8 +45,6 @@ public class PresentationProfile : Profile
         CreateMap<AttachmentsModel, AttachmentsResponse>();
         CreateMap<UpdateAtachmentsRequest, UpdateAttachmentsModel>();
         CreateMap<AttachmentsPreviewModel, AttachmentsPreviewResponse>();
-        CreateMap<CreateAttachmentsRequest, CreateAttachmentsModel>();
-
 
         #endregion
         
