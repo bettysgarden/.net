@@ -11,19 +11,22 @@
   <component name="ChangeListManager">
     <list default="true" id="b2d0657f-af33-4a74-9ff8-6915db51119a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/MapperProfile/ServicesProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/MapperProfile/ServicesProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Models/Attachments/CreateAttachmentsModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Models/Likes/CreateLikesModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Models/Question/CreateQuestionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Models/Question/CreateQuestionModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/IAttachmentsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/IAttachmentsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/ILikesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Abstract/ILikesService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/AttachmentsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/AttachmentsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/LikesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/Services/Implementation/LikesService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.Shared/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Shared/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AttachmentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AttachmentController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/LikesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/LikesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/MapperProfile/PresentationProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/MapperProfile/PresentationProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/bin/Debug/net6.0/Otvetmailru.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/Otvetmailru.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/ref/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/ref/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/refint/Otvetmailru.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.Services/obj/Debug/net6.0/refint/Otvetmailru.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AnswerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AnswerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/QuestionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/QuestionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Models/Answer/CreateAnswerRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Models/Answer/CreateAnswerRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/Models/Question/CreateQuestionRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Models/Question/CreateQuestionRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/Otvetmailru.WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/bin/Debug/net6.0/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Otvetmailru.WebAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +40,12 @@
     <setting file="file://$PROJECT_DIR$/Otvetmailru.Repository/ServicesExtensions/AddRepositoryConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Otvetmailru.Services/ServicesExtensions/AddBusinessLogicConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Otvetmailru.Shared/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Elizaveta1/RiderProjects/dotnet/Otvetmailru.WebAPI/Controllers/AttachmentController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -184,7 +189,7 @@
       <workItem from="1669567736010" duration="6613000" />
       <workItem from="1669921481837" duration="292000" />
       <workItem from="1670518958469" duration="554000" />
-      <workItem from="1672303487177" duration="1259000" />
+      <workItem from="1672303487177" duration="3387000" />
     </task>
     <task id="LOCAL-00001" summary="add lab2">
       <created>1667365938779</created>
@@ -382,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669921510268</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update create methods">
+      <created>1672304975286</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672304975286</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +427,26 @@
     <MESSAGE value="mapper profile upd" />
     <MESSAGE value="task 4 completed" />
     <MESSAGE value="task 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 4" />
+    <MESSAGE value="update create methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="update create methods" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AnswerController.cs</url>
+          <line>98</line>
+          <properties documentPath="$PROJECT_DIR$/Otvetmailru.WebAPI/Controllers/AnswerController.cs" initialLine="98" containingFunctionPresentation="method 'GetAnswer'">
+            <startOffsets>
+              <option value="2847" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2848" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -118,12 +118,6 @@
             Get Attachment
             </summary>
         </member>
-        <member name="M:Otvetmailru.WebAPI.Controllers.AttachmentController.CreateAttachment(Otvetmailru.Services.Models.CreateAttachmentsModel)">
-            <summary>
-            create Attachment
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:Otvetmailru.WebAPI.Controllers.LikesController">
             <summary>
             Doctors endpoints
@@ -154,12 +148,6 @@
             <summary>
             Get Likes
             </summary>
-        </member>
-        <member name="M:Otvetmailru.WebAPI.Controllers.LikesController.CreateLikes(Otvetmailru.Services.Models.CreateLikesModel)">
-            <summary>
-            create Likes
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:Otvetmailru.WebAPI.Controllers.QuestionController">
             <summary>

@@ -103,9 +103,22 @@ namespace Otvetmailru.WebAPI.Controllers;
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult CreateAnswer([FromBody] CreateAnswerModel answer)
+        public IActionResult CreateAnswer([FromBody] CreateAnswerRequest answer)
         {
-            var response =_answerService.CreateAnswer(answer);
+            var validationResult = answer.Validate();
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors);
+            }
+            try
+            {
+
+            var response =_answerService.CreateAnswer(_mapper.Map<CreateAnswerModel>(answer));
             return Ok(response);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
